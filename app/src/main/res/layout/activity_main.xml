@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="143dp"
+        android:layout_height="84dp"
+        android:src="@drawable/logo" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <!-- First Name Input Field -->
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/first_name"/>
+
+    <!-- Last Name Input Field -->
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/last_name"/>
+
+    <!-- Email Input Field -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/email"/>
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"/>
+
+    <!-- Confirm Password Input Field -->
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/genderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        />
+
+    <!-- Radio Buttons for Gender -->
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female" />
+
+        <!-- Add more RadioButtons if needed for other genders -->
+
+    </RadioGroup>
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:layout_marginTop="16dp" />
+
+    <!-- Exit Button -->
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/third"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
